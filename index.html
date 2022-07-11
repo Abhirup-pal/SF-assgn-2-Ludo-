@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spiralgrid</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ludo.css">
+</head>
+
+<body>
+    <div id="ask-for-size">
+        <p>
+            Enter the size of the board:
+            <input type="textarea" id="inputsize">
+        </p>
+        <button class="btn-info" onclick=inputsize()>
+            OK!
+        </button>
+    </div>
+    <div class="container">
+        <div id="container-for-board">
+            <div class="card-1">
+                Locker for player A
+                <div id="A-locker">1A</div>
+            </div>
+            <div id="card-container">
+            </div>
+            <div class="card-1">
+                Locker for player B <br>
+                <div id="B-locker">2B</div>
+            </div>
+        </div>
+        <div id="largecard">
+            <div id="turn">TURN : PLAYER <span id="turn_name">A</span></div>
+            <button class="btn-primary" id="roll" onclick=roll()>ROLL..!!</button>
+            <div id="itsa" style="display:none">It's a </div>
+            <div id="showturnvalue">
+
+            </div>
+            <div id="comments">
+
+            </div>
+            <button id="reset"class="btn-danger" style="margin-top:2rem;" onclick=reset()>Reset</button>
+        </div>
+    </div>
+</body>
+<script src="ludo.js"></script>
+
+</html>
